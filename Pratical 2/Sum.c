@@ -28,10 +28,10 @@ int main(void) {
 /* Find the difference */
    diff = sum1-sum2;
    printf(" Difference between the two is %f\n",diff);
+   //There is a difference between sum 1 and sum2  = 0.000007
    if(sum1!=sum2)
    {
       printf(" Results for both summation are not same");
    }
-   //There is a difference between sum 1 and sum2  = 0.000007
-
+   
 }
