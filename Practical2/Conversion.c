@@ -8,8 +8,11 @@ int main(void) {
    float fnum;
    char binnum[60];
 
+    printf("Enter a numeric digit: \n ");
+    scanf("%d",&num);
+
 /* Intialise 4-byte integer */
-   num = 33554431;
+   //num = 33554431;
 /* Convert to 4-byte float */
    fnum = (float) num;
 
@@ -31,10 +34,8 @@ int main(void) {
 
 /* Completing the code for calculations */
       numdigits = ceil(logf(fnum)/logf(2));
-      //printf("Enter a numeric digit: \n ");
-      //scanf("%d",&num);
+     
       printf("The number of digits is %d\n",numdigits);
-      printf("Number is: num=%d,  Floating number is: fnum=%f, num in binary=%s\n",
-      num,fnum,binnum);
+      printf("Number is: num=%d,  Floating number is: fnum=%f, num in binary=%s\n",num,fnum,binnum);
 
 }
