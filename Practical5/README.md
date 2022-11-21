@@ -5,4 +5,4 @@ Student Id:22201549
 
 Folder which contains details for Pratical 5(Code in C)
 1. Learn printing fibonnaci series.
-
+2. Learn to calculate the hyperbolic arc tangent with given equations.
