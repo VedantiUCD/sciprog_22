@@ -4,6 +4,7 @@
 
 int main()
 {
+    void hanoi (int n, int source, int destination, int inter);
     int h = 6;
 
     printf("Solution for %d discs\n",h);
