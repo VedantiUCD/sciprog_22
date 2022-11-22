@@ -7,15 +7,15 @@ void fib(int *a, int *b);
 int main()
 {
     // declare required variables
-    int num=5,i;
+    int num,i;
     int fib0=0, fib1=1;
 
     //take to count of numbers to calculate fib sequnece
     printf ("Enter a positive number: \n");
-   // scanf("%d",&num);
+    scanf("%d",&num);
     
     //checking if number is positive, if not then exit code
-    if(n<1)
+    if(num<1)
     {
         printf("The number is not positive: \n");
         exit(1);
@@ -27,7 +27,7 @@ int main()
     printf("%d, %d, ",fib0,fib1);
 
     //Loop to calculate remaining sequence numbers, calls function defined
-    for(i=2;i<=n;i++)
+    for(i=2;i<=num;i++)
     {
         fib(&fib1,&fib0);
         printf("%d, ",fib1);
