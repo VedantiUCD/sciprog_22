@@ -3,6 +3,9 @@
 Readme file updated by : Vedanti Borate 
 Student Id:22201549
 
+This contains codes for praticals of scientific programming from 2 till 10.
+
+
 Fork this repository into your github account. From there; 
 
 - Clone the repo onto your local machine/sciprog using `git clone`
