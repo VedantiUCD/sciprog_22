@@ -2,12 +2,15 @@
 #include<math.h>
 // use const as it is a better practice
 
+// function declaration
 double arctanh1(const double x, const double delta);
-
 double arctanh2(const double x);
 
 int main(){
+	//variable declaration
 	double delta,x;
+
+	//Collecting precision detail from user
 	printf("Enter the precision for Maclaurin Series\n");
 	scanf("%lf", &delta);
 
@@ -16,11 +19,15 @@ int main(){
 	double tan2[length]; //Store the results of arctanh2 for each x
 
 
-	int j =0;
+	int j =0;				//array index
 	x = -0.9;
-	while(x<=0.9 && j<length){
+
+	while(x<=0.9 && j<length)
+	{
+		//passing values to functions
 		tan1[j] = arctanh1(x,delta);
 		tan2[j] = arctanh2(x);
+
 		printf("The difference at x=%lf between them is %.10lf\n",x,fabs(tan1[j]-tan2[j]));
 		j++;
 		x=x+0.1; // try with 0.01
@@ -29,11 +36,13 @@ int main(){
 }
 
 
-double arctanh1(const double x, const double delta){
+double arctanh1(const double x, const double delta)
+{
+	// calculating approximate values
 
 	double arcTan = 0;  // approximate result
 	double elem, val;
-	int n=0; //sum parameter
+	int n=0; 			//sum parameter
 
 	do {	
 		val = 2*n+1;
@@ -48,7 +57,9 @@ double arctanh1(const double x, const double delta){
 } 
 
 
-double arctanh2(const double x){
+double arctanh2(const double x)
+{
+	// calculating actual values through log function available
 	return (log(1+x)-log(1-x)/2);
 
 
