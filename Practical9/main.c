@@ -4,6 +4,7 @@
 #define MAX_FILE_NAME 100
 
 //read in a file, convert it into an array and then use the function
+//int isMagicSquare(int magicsquare, int n);
 
 int get_num_lines(char filename[MAX_FILE_NAME])
 {
