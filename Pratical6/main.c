@@ -4,6 +4,7 @@
 
 int main(void)
 {
+    void matmul(int n, int p, int q, double A[n][p], double B[p][q],double C[n][q]);
     //Matrix Multiplication
     // dot product (multiply corresponding row and column and add the products.
 
